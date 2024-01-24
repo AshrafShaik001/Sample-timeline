@@ -4,6 +4,7 @@ on: push
 
 jobs:
   cypress-run:
+    working_directory: ~AshrafShaik001/Sample-timeline/e2e-tests
     runs-on: macos-latest
     steps:
       - name: Checkout
