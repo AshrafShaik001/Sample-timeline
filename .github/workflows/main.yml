@@ -11,7 +11,7 @@ jobs:
       - name: Set working directory
         run: cd /Users/runner/work/Sample-timeline/Sample-timeline/e2e-tests
       - name: Install dependencies
-        run: npm install
+        run: cd /Users/runner/work/Sample-timeline/Sample-timeline/e2e-tests & npm install
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
