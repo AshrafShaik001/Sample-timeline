@@ -8,11 +8,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          path: /Users/runner/work/Sample-timeline/Sample-timeline/e2e-tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
-          path: /Users/runner/work/Sample-timeline/Sample-timeline/e2e-tests
           # group: "All tests"
           headed: false
           record: false
