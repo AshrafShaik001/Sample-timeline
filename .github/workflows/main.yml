@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set working directory
-        run: cd Sample-timeline/e2e-tests
+        run: cd e2e-tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
